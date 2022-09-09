@@ -3,7 +3,7 @@
 #
 #  s.py
 #
-#  Copyright 2021 GandalfThrGreytGamer <Jaxer6563@gmail.com>
+#  Copyright 2021 GandalfTheGreytGamer3791 <Jaxer6563@gmail.com>
 #
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
