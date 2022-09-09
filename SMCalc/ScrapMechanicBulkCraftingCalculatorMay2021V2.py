@@ -64,7 +64,3 @@ while category == False:
 		clearscreen.clearscreen()
 		interactive()
 		category = True
-
-    else:
-        print("Choose a category Numbnuts")
-        category = False

@@ -39,3 +39,4 @@ def blocks():
         else:
             print("Please choose one of the given values.") # Error catch to prevent program from crashing due to a mispelled word or someone thinking their smart and trying to break the code
             choice = 0 # Resets the value to 0 so the loop repeats
+blocks()
