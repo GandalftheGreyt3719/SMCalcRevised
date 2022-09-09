@@ -42,7 +42,7 @@ bulkcraft = 1
 category = False
 
 
-while category == 0:
+while category == False:
 	choice = input("Are you crafting Parts, Blocks, Tools, Consumables, or Interactive Parts?\n[Please use same Capitalization and spaces] \n ")
 	if choice == "Parts":
 		clearscreen.clearscreen()
@@ -64,3 +64,7 @@ while category == 0:
 		clearscreen.clearscreen()
 		interactive()
 		category = True
+
+    else:
+        print("Choose a category Numbnuts")
+        category = False
