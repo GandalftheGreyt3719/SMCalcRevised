@@ -10,13 +10,14 @@
 #-------------------------------------------------------------------------------
 import time, clearscreen
 from blocks import blocks
-from interactiveparts import interactive
-from parts import parts
-from tools import tools
-from consumables import consumables
+#from interactiveparts import interactive
+#from parts import parts
+#from tools import tools
+#from consumables import consumables
 category = 0
 categories = ["Blocks","Tools","Parts","Interactive Parts","Consumables"]
 listitem =1
+clearscreen.clearscreen()
 for x in categories:
     print(listitem,x)
     listitem += 1
@@ -32,19 +33,19 @@ while category == 0:
         idx = category - 1
         print("\n", categories[idx])
 
-        if category == 1:
+        if idx == 0:
             clearscreen.clearscreen()
             blocks()
-        elif category == 2:
+        elif idx == 1:
             clearscreen.clearscreen()
             tools()
-        elif category == 3:
+        elif idx == 2:
             clearscreen.clearscreen()
             parts()
-        elif category == 4:
+        elif idx == 3:
             clearscreen.clearscreen()
             interactive()
-        elif category == 5:
+        elif idx == 4:
             clearscreen.clearscreen()
             consumables()
     else:
