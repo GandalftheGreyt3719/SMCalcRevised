@@ -9,14 +9,15 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 import time, clearscreen
-from blocks import blocks
+from blocks import *
 #from interactiveparts import interactive
 #from parts import parts
-#from tools import tools
+from tools import *
 #from consumables import consumables
 category = 0
 categories = ["Blocks","Tools","Parts","Interactive Parts","Consumables"]
 listitem =1
+end= False
 clearscreen.clearscreen()
 for x in categories:
     print(listitem,x)
@@ -51,4 +52,6 @@ while category == 0:
     else:
             print("Thats not a valid option")
             category = 0
+
+end = input("Press Enter to Close the program")
 
