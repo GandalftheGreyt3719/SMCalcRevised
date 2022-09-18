@@ -8,9 +8,9 @@
 # Copyright:   (c) SyringJ 2022
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
-
+import time
 def tools():
-    import time
+
     category = 'tools'
     choice = 0
     listitem = 1
@@ -34,7 +34,6 @@ def tools():
         if choice in range (1,3+1): # reduces the if elif else chunk to a single if else statement. 26+1 allows 26 to be a value given, while allowing past the choice-1
             idx = choice - 1
             print("\n", block[idx])
-            print("\n", block_craft[block[idx]])
         else:
             print("Please choose one of the given values.") # Error catch to prevent program from crashing due to a mispelled word or someone thinking their smart and trying to break the code
             choice = 0 # Resets the value to 0 so the loop repeats

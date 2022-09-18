@@ -17,8 +17,8 @@ def consumables():
     inputtype = 0
     total = 0
     repeatcraft = 0
-    block_craft = { "Yield" : 10},
-    block = []
+    block_craft = { "Gasoline":{"Crude Oil" : 5,"Yield" : 5}, "Battery":{"Scrap Metal":10,"Glow":5,"Chemical":5,"Yield" : 5},"Water":{"Bucket - Water":1,"Yield" : 1},"Chemical":{"Bucket - Chemical":1,"Yield" : 1},"Paint_Ammo":{"Pigment Flower":5,"Yield" : 5},"Fertilizer":{"Seeds - Tomato":10,"Seeds - Redbeet":10,"Seeds - Carrot"10,"Yield" : 5},"Glowstick":{"Chemical":4,"Glow":4,"Yield" : 4}}
+    block = ["Gasoline","Battery","Water","Paint_Ammo","Chemical","Fertilizer","Glowstick"]
     for x in block:
         print(listitem, x)
 

@@ -1,164 +1,58 @@
-import time, clearscreen
-category = 'Consumables'
-
-Gasoline = ("5 Crude Oil for 5 Gasoline [10 Sec. Craft Time]")
-Battery = ("10 Scrap Metal, 5 Glow, and 5 Chemical for 5 Battery")
-Water = ("1 Bucket of Water for 1 Water and 1 Empty Bucket [5 Sec. Craft Time]")
-PaintAmmo = ("5 Pigment Flower for 5 Paint Ammo [15 Sec. Craft Time]")
-Chemical = ("1 Bucket of Chemical for 1 Chemicals and 1 Empty Bucket [5 Sec. Craft Time]")
-Fertilizer = ("10 Tomato Seeds, 10 Carrot Seeds, and 10 Redbeetfor 5 Fertilizer [10 Sec. Craft Time]")
-Glowstick = ("4 Chemical and 4 Glow for 4 Glow Stick [20 Sec. Craft Time]")
+#-------------------------------------------------------------------------------
+# Name:        module1
+# Purpose:
+#
+# Author:      SyringJ
+#
+# Created:     11/09/2022
+# Copyright:   (c) SyringJ 2022
+# Licence:     <your licence>
+#-------------------------------------------------------------------------------
+import time
 def consumables():
-		print ("Here is the list of Craftable Consumables: \n")
-		print ("Gasoline \nBattery \nWater \nPaintAmmo \nChemical \nFertilizer \nGlowstick")
 
-		time.sleep(2)
-		input_str = "\n \nPlease choose a block to craft \n\x1B[3m Please use same Capitalization and spaces\x1B[23m \n "
-		choice = input(input_str)
-		if choice == "Gasoline":
-			print (Gasoline)
-			CrudeOil = 5
-			crafttime = 10
-			
-			singlecraft = 5
-			craft = True
-			bulk = True
-			
-		elif choice == "Battery":
-			print (Battery)
-			ScrapMetal = 10
-			Glow = 5
-			ChemicalEmpty = 5
-			
-			singlecraft = 5
-			crafttime = 10
-			
-			craft = True
-			bulk = True
-		elif choice == "Water":
-			print (Water)
-			BucketofWater = 1
-			
-			singlecraft = 1
-			crafttime = 5
-			craft = True
-			
-			bulk = True
-		elif choice == "Paint Ammo":
-			print (PaintAmmo)
-			PigmentFlower = 5
-			
-			singlecraft = 5
-			crafttime = 15
-			
-			craft = True
-			bulk = True
-		elif choice == "Chemical":
-			print (Chemical)
-			BucketofChemical = 1
-			
-			singlecraft = 1
-			crafttime = 5
-			
-			craft = True
-			bulk = True
-		elif choice == "Fertilizer":
-			print (Fertilizer)
-			SeedsT = 10
-			SeedsR = 10
-			SeedsC = 10
-			
-			singlecraft = 5
-			crafttime = 10
-			
-			craft = True
-			bulk = True
-		elif choice == "Glowstick":
-			print (Glowstick)
-			Glow = 4
-			ChemicalEmpty = 4
-			
-			singlecraft = 4
-			crafttime = 20
-			
-			craft = True
-			bulk = True
+    category = 'Blocks'
+    choice = 0
+    listitem = 1
+    inputtype = 0
+    total = 0
+    repeatcraft = 0
+    block_craft = { "Gasoline":{"Crude Oil" : 5,"Yield" : 5}, "Battery":{"Scrap Metal":10,"Glow":5,"Chemical":5,"Yield" : 5},"Water":{"Bucket - Water":1,"Yield" : 1},"Chemical":{"Bucket - Chemical":1,"Yield" : 1},"Paint_Ammo":{"Pigment Flower":5,"Yield" : 5},"Fertilizer":{"Seeds - Tomato":10,"Seeds - Redbeet":10,"Seeds - Carrot":10,"Yield" : 5},"Glowstick":{"Chemical":4,"Glow":4,"Yield" : 4}}
+    block = ["Gasoline","Battery","Water","Paint_Ammo","Chemical","Fertilizer","Glowstick"]
+    for x in block:
+        print(listitem, x)
 
-			if choice == 'Gasoline':
-					CrudeOil =  (bulkcraft * CrudeOil) / singlecraft
-					crafttime = (bulkcraft * crafttime) / singlecraft
-					Totalcraft = (bulkcraft * singlecraft) / singlecraft
-					print (Totalcraft)
-					print ('Gasoline from')
-					print (CrudeOil)
-					print ('Crude Oil')
-					print (crafttime)
-					print ('seconds') 
-			elif choice == 'Battery':
-					ScrapMetal = (bulkcraft * ScrapMetal) / singlecraft
-					Glow = (bulkcraft * Glow) / singlecraft
-					ChemicalEmpty = (bulkcraft * ChemicalEmpty) / singlecraft
-					crafttime = (bulkcraft * crafttime) / singlecraft
-					Totalcraft = (bulkcraft * singlecraft) / singlecraft
-					print (Totalcraft)
-					print ('Battery from')
-					print (ScrapMetal)
-					print ('Scrap Metal,')
-					print (Glow)
-					print ('Glow, and')
-					print (ChemicalEmpty)
-					print ('Chemical')
-					print (crafttime)
-					print ('seconds')
-			elif choice == 'Water':
-					BucketofWater = (bulkcraft * BucketofWater) / singlecraft
-					crafttime = (bulkcraft * crafttime) / singlecraft
-					Totalcraft = (bulkcraft * singlecraft) / singlecraft
-					print (Totalcraft)
-					print ('Water from')
-					print (BucketofWater)
-					print ('Bucket Of Water')
-					print (crafttime)
-					print ('seconds')
-					
-			elif choice == 'Chemical':
-					BucketofChemical = (bulkcraft * BucketofChemical) / singlecraft
-					crafttime = (bulkcraft * crafttime) / singlecraft
-					Totalcraft = (bulkcraft * singlecraft) / singlecraft
-					print (Totalcraft)
-					print ('Chemical from')
-					print (BucketofChemical)
-					print ('Bucket of Chemical')
-					print (crafttime)
-					print ('seconds')
-					
-			elif choice == 'Fertilizer':
-					SeedsC = (bulkcraft * SeedsC) / singlecraft
-					SeedsR = (bulkcraft * SeedsR) / singlecraft
-					SeedsT = (bulkcraft * SeedsT) / singlecraft
-					crafttime = (bulkcraft * crafttime) / singlecraft
-					Totalcraft = (bulkcraft * singlecraft) / singlecraft
-					print (Totalcraft)
-					print ('Fertilizer from')
-					print (SeedsC)
-					print ('Carrot Seeds')
-					print (SeedsR)
-					print ('Redbeet Seeds')
-					print (SeedsT)
-					print ('Turnip Seeds')
-					print (crafttime)
-					print ('seconds')
-				
-			elif choice == 'Glowstick':
-					Glow = (bulkcraft * Glow) / singlecraft
-					ChemicalEmpty = (bulkcraft * ChemicalEmpty) / singlecraft
-					crafttime = (bulkcraft * crafttime) / singlecraft
-					Totalcraft = (bulkcraft * singlecraft) / singlecraft
-					print (Totalcraft)
-					print ('Glowstick from')
-					print (Glow)
-					print ('Glow and')
-					print (ChemicalEmpty)
-					print ('Chemical')
-					print (crafttime)
-					print ('seconds')
+        listitem += 1
+        time.sleep(0.125)
+    while choice == 0:
+        choice = input("Choose a block (Enter only the Number):")
+        if not choice.isalpha(): # Makes sure that the input is a number and not a string.
+            choice = int(choice)
+        else:
+            choice = 0
+            print("Thats not a number. Choose a number Numbnuts.")
+        if choice in range (1,26+1): # reduces the if elif else chunk to a single if else statement. 26+1 allows 26 to be a value given, while allowing past the choice-1
+            idx = choice - 1
+            print("\n", block[idx])
+        else:
+            print("Please choose one of the given values.") # Error catch to prevent program from crashing due to a mispelled word or someone thinking their smart and trying to break the code
+            choice = 0 # Resets the value to 0 so the loop repeats
+        while total == 0:
+            total = input(f"\nHow many {block[idx]} do you want: ")
+            if not total.isalpha(): # Makes sure that the input is a number and not a string.
+                total = int(total)
+            else:
+                total = 0
+                print("Thats not a number. Choose a number Numbnuts.")
+                continue
+            if ((int(total) // block_craft[block[idx]]["Yield"]) == int(total) / block_craft[block[idx]]["Yield"]):
+                repeatcraft = (int(total) // block_craft[block[idx]]["Yield"])
+            else:
+                repeatcraft = (int(total) // block_craft[block[idx]]["Yield"])+1
+            #print(type(block_craft[block[idx]]))
+            for k,v in (block_craft[block[idx]].items()):
+                print(f"\n{k} = {v*repeatcraft}")
+
+
+
+

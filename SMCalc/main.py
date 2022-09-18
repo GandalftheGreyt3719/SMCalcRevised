@@ -9,11 +9,11 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 import time, clearscreen
-from blocks import *
+from blocks import blocks
 #from interactiveparts import interactive
 #from parts import parts
-from tools import *
-#from consumables import consumables
+from tools import tools
+from consumables import consumables
 category = 0
 categories = ["Blocks","Tools","Parts","Interactive Parts","Consumables"]
 listitem =1
