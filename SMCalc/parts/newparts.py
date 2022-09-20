@@ -18,8 +18,8 @@ def parts():
     inputtype = 0
     total = 0
     repeatcraft = 0
-    block_craft = { "Yield" : 10},
-    block = []
+    block_craft = {"Wheel":{"Wood 1":15, "Metal 1":5,"Bees Wax":6"Yield" : 1},"Big Wheel":{"Wood 1":40, "Metal 1":10,"Bees Wax":8"Yield" : 1},"Any I Beam":{"Metal 1":1, "Yield":1},"Any Small Pipe":{"Metal 1":1, "Yield":1},"Any Pipe":{"Metal 1":1, "Yield":1},"Pipe Valve":{"Metal 1":1, "Yield":1},"Small Rectangle Window":{"Glass":5,"Metal 1":5,"Yield":1},"Mannequin Hand":{""}
+    block = ["Wheel","Big Wheel","Any I-Beam","Small Rectangle Window","Square Window","Large Rectangle Window","Small Windshield","Large Windshield","Any Small Pipe", "Any Pipe", "Pipe Valve", "Toilet Paper", "Toilet","Sink","Mannequin Hand","Mannequine Boot", "Mug", "Duck Statuette", "Traffic Cone","Scrap Wheel", "Bucket","Soil Bag"]
     for x in block:
         print(listitem, x)
 
