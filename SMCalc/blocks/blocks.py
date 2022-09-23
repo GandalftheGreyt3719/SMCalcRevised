@@ -43,5 +43,5 @@ def blocks():
             #print(type(block_craft[block[idx]]))
             for k,v in (block_craft[block[idx]].items()):
                 print(f"\n{k} = {v*repeatcraft}")
-blocks()
+
 

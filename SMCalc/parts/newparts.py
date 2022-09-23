@@ -8,7 +8,7 @@
 # Copyright:   (c) SyringJ 2022
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
-
+import time
 def parts():
 
 
@@ -18,7 +18,7 @@ def parts():
     inputtype = 0
     total = 0
     repeatcraft = 0
-    block_craft = {"Wheel":{"Wood 1":15, "Metal 1":5,"Bees Wax":6"Yield" : 1},"Big Wheel":{"Wood 1":40, "Metal 1":10,"Bees Wax":8"Yield" : 1},"Any I Beam":{"Metal 1":1, "Yield":1},"Any Small Pipe":{"Metal 1":1, "Yield":1},"Any Pipe":{"Metal 1":1, "Yield":1},"Pipe Valve":{"Metal 1":1, "Yield":1},"Small Rectangle Window":{"Glass":5,"Metal 1":5,"Yield":1},"Mannequin Hand":{""}
+    block_craft = {"Wheel":{"Wood 1":15, "Metal 1":5,"Bees Wax":6"Yield" : 1},"Big Wheel":{"Wood 1":40, "Metal 1":10,"Bees Wax":8"Yield" : 1},"Any I Beam":{"Metal 1":1, "Yield":1},"Any Small Pipe":{"Metal 1":1, "Yield":1},"Any Pipe":{"Metal 1":1, "Yield":1},"Pipe Valve":{"Metal 1":1, "Yield":1},"Small Rectangle Window":{"Glass":5,"Metal 1":5,"Yield":1},"Mannequin Hand":{"Wood 1":2,"Paint Ammo":1,"Bees Wax":3,"Yield" : 1},"Mannequine Boot" :{"Woc Steak":1,"Wood 1":2,"Paint Ammo":1,"Bees Wax":1,"Yield" : 1},"Duck Statuette":{"Wood 1":1,"Paint Ammo":1,"Bees Wax":3,"Glue":1,"Yield":1},"Traffic Cone":{"Metal 1":10,"Paint Ammo":1,"Yield":1},"Scrap Wheel":{"Scrap Wood":20,"Scrap Metal":5,"Yield":1},"Bucket":{"Metal 1":5,"Yield":1},"Soil Bag":{"Scrap Wood":10,"Sand":10,"Carrot":2,"Yield":1},"Toilet Paper":{"Scrap Wood":1,"Yield":1},"Mug":{"Metal 1":1,"Yield":1}}
     block = ["Wheel","Big Wheel","Any I-Beam","Small Rectangle Window","Square Window","Large Rectangle Window","Small Windshield","Large Windshield","Any Small Pipe", "Any Pipe", "Pipe Valve", "Toilet Paper", "Toilet","Sink","Mannequin Hand","Mannequine Boot", "Mug", "Duck Statuette", "Traffic Cone","Scrap Wheel", "Bucket","Soil Bag"]
     for x in block:
         print(listitem, x)
